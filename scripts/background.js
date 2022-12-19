@@ -1,20 +1,16 @@
 var websocket;
-
-async function getCurrentTab() {
-  let queryOptions = { active: true, currentWindow: true };
-  let [tab] = await chrome.tabs.query(queryOptions);
-  return tab;
-}
 var port = chrome.runtime.connect({ name: "stock" });
-function createWebSocketConnection() {
-  if ("WebSocket" in window) {
-    connect("wss://stream.coinmarketcap.com/price/latest");
-  }
-}
+let urlSocket = 'wss://stream.coinmarketcap.com/price/latest';
+chrome.storage.local.get(["badgeText"], ({ badgeText }) => {
+  chrome.action.setBadgeText({ text: badgeText });
+});
+
+
+connect(urlSocket);
 
 //Make a websocket connection with the server.
 function connect(host) {
-  if (websocket === undefined) {
+  if (websocket === undefined || websocket == null || websocket.readyState === websocket.CLOSED) {
     // port.postMessage("open");
     websocket = new WebSocket(host);
   }
@@ -29,7 +25,7 @@ function connect(host) {
     console.log(event.data);
 
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-      if (tabs.length == 0) {
+      if (tabs.length === 0) {
         return;
       }
       chrome.tabs.sendMessage(tabs[0].id, event.data, function (response) {});
@@ -39,22 +35,6 @@ function connect(host) {
   //If the websocket is closed but the session is still active, create new connection again
   websocket.onclose = function () {
     // port.postMessage("close");
-    websocket = undefined;
-    chrome.storage.local.get(["demo_session"], function (data) {
-      if (data.demo_session) {
-        createWebSocketConnection();
-      }
-    });
+    connect(urlSocket);
   };
 }
-
-//Close the websocket connection
-function closeWebSocketConnection(username) {
-  if (websocket != null || websocket != undefined) {
-    websocket.close();
-    websocket = undefined;
-  }
-  e;
-}
-
-// createWebSocketConnection();

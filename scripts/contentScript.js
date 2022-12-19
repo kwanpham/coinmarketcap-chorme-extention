@@ -1,19 +1,13 @@
-var wsUri = "wss://stream.coinmarketcap.com/price/latest";
-var output;
-var g = document.createElement("div");
-g.setAttribute("id", "output");
-g.style = "position: fixed; top: 0; right: 0; z-index:9999";
-output = document.getElementById("output");
-document.body.appendChild(g);
 
 var port = chrome.runtime.connect({ name: "stock" });
 
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("alertButton").addEventListener("click", function () {
-    port.onMessage.addListener(function (msg) {
-      console.log(msg); // doesn't log anything
-    });
+  port.onMessage.addListener(function (msg) {
+    console.log(msg); // doesn't log anything
   });
+  // document.getElementById("alertButton").addEventListener("click", function () {
+  //
+  // });
 });
 
 function writeToScreen(message) {
@@ -37,7 +31,7 @@ async function getCurrentTab() {
   let [tab] = await chrome.tabs.query(queryOptions);
   return tab;
 }
-var port = chrome.runtime.connect({ name: "stock" });
+
 function createWebSocketConnection() {
   if ("WebSocket" in window) {
     connect("wss://stream.coinmarketcap.com/price/latest");
@@ -89,3 +83,4 @@ fetch(chrome.runtime.getURL("/template.html"))
     g.insertAdjacentHTML("beforeend", html);
     // not using innerHTML as it would break js event listeners of the page
   });
+
