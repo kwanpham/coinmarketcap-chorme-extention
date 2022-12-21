@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embedded Hello World</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        /*tr:nth-child(even) {*/
+        /*    background-color: #dddddd;*/
+        /*}*/
+
+        #menu {
+
+            display: block;
+            background-color: #798d64;
+            right: -256px;
+            width: 256px;
+            top: 0;
+            z-index: 9999;
+            position: fixed;
+            -webkit-box-shadow: 5px 0px 5px 0px rgba(50, 50, 50, 0.75);
+            -moz-box-shadow: 5px 0px 5px 0px rgba(50, 50, 50, 0.75);
+            box-shadow: 5px 0px 5px 0px rgba(50, 50, 50, 0.75);
+
+            /*must be same as width*/
+            -webkit-transition: right 1s;
+            -moz-transition: right 1s;
+            -o-transition: right 1s;
+            transition: right 1s;
+        }
+
+        #menu .toggle {
+            top: 80px;
+            right: 256px;
+            position: absolute;
+            background-color: #798d64;
+            color: #fff;
+            -webkit-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+            -moz-box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+            box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+        }
+
+    </style>
+</head>
+<body>
+<div id="menu">
+    <!-- Lable for #showmenu to hide the menu/uncheck the checkbox -->
+    <label class="toggle">View</label>
+    <!-- Menu content -->
+    <table>
+        <thead>
+
+        <tr>
+            <th>#</th>
+            <th>Tên</th>
+            <th>Giá</th>
+            <th>24h%</th>
+            <!--            <th>7d%</th>-->
+        </tr>
+
+        </thead>
+
+        <tbody id="your-table-body-id2">
+
+
+<!--        <tr id="1">-->
+<!--            <td>1</td>-->
+<!--            <td>Bitcoin</td>-->
+<!--            <td class="gia"></td>-->
+<!--            <td class="24h"></td>-->
+<!--        </tr>-->
+<!--        <tr id="1027">-->
+<!--            <td>2</td>-->
+<!--            <td>Ethereum</td>-->
+<!--            <td class="gia"></td>-->
+<!--            <td class="24h"></td>-->
+<!--        </tr>-->
+<!--        <tr id="74">-->
+<!--            <td>3</td>-->
+<!--            <td>Dogecoin</td>-->
+<!--            <td class="gia"></td>-->
+<!--            <td class="24h"></td>-->
+<!--        </tr>-->
+<!--        <tr id="1839">-->
+<!--            <td>4</td>-->
+<!--            <td>Binance</td>-->
+<!--            <td class="gia"></td>-->
+<!--            <td class="24h"></td>-->
+<!--        </tr>-->
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
