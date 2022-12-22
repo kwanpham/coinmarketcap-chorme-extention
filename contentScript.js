@@ -56,16 +56,20 @@ function updateTableHTML(myArray) {
         tableBody.appendChild(newRow);
 
         let newCell1 = document.createElement("td");
-        newCell1.textContent = myArray.indexOf(object);
+        newCell1.textContent = myArray.indexOf(object) + 1;
         newRow.appendChild(newCell1);
 
         let newCell2 = document.createElement("td");
-        // newCell2.textContent = object.key;
+        newCell2.textContent = object.value
         newRow.appendChild(newCell2);
 
         let newCell3 = document.createElement("td");
+        newCell3.setAttribute("class" , "gia")
         newRow.appendChild(newCell3);
 
+        let newCell4 = document.createElement("td");
+        newCell4.setAttribute("class" , "24h")
+        newRow.appendChild(newCell4);
     });
 }
 

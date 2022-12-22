@@ -1,0 +1,402 @@
+[
+  {
+    "text": "1",
+    "value": "Bitcoin"
+  },
+  {
+    "text": "1027",
+    "value": "Ethereum"
+  },
+  {
+    "text": "825",
+    "value": "Tether"
+  },
+  {
+    "text": "3408",
+    "value": "USD Coin"
+  },
+  {
+    "text": "1839",
+    "value": "BNB"
+  },
+  {
+    "text": "4687",
+    "value": "Binance USD"
+  },
+  {
+    "text": "52",
+    "value": "XRP"
+  },
+  {
+    "text": "74",
+    "value": "Dogecoin"
+  },
+  {
+    "text": "2010",
+    "value": "Cardano"
+  },
+  {
+    "text": "3890",
+    "value": "Polygon"
+  },
+  {
+    "text": "4943",
+    "value": "Dai"
+  },
+  {
+    "text": "6636",
+    "value": "Polkadot"
+  },
+  {
+    "text": "1958",
+    "value": "TRON"
+  },
+  {
+    "text": "2",
+    "value": "Litecoin"
+  },
+  {
+    "text": "5994",
+    "value": "Shiba Inu"
+  },
+  {
+    "text": "5426",
+    "value": "Solana"
+  },
+  {
+    "text": "7083",
+    "value": "Uniswap"
+  },
+  {
+    "text": "5805",
+    "value": "Avalanche"
+  },
+  {
+    "text": "3957",
+    "value": "UNUS SED LEO"
+  },
+  {
+    "text": "3717",
+    "value": "Wrapped Bitcoin"
+  },
+  {
+    "text": "11419",
+    "value": "Toncoin"
+  },
+  {
+    "text": "1975",
+    "value": "Chainlink"
+  },
+  {
+    "text": "328",
+    "value": "Monero"
+  },
+  {
+    "text": "3794",
+    "value": "Cosmos"
+  },
+  {
+    "text": "1321",
+    "value": "Ethereum Classic"
+  },
+  {
+    "text": "512",
+    "value": "Stellar"
+  },
+  {
+    "text": "1831",
+    "value": "Bitcoin Cash"
+  },
+  {
+    "text": "3635",
+    "value": "Cronos"
+  },
+  {
+    "text": "3897",
+    "value": "OKB"
+  },
+  {
+    "text": "18876",
+    "value": "ApeCoin"
+  },
+  {
+    "text": "3155",
+    "value": "Quant"
+  },
+  {
+    "text": "4030",
+    "value": "Algorand"
+  },
+  {
+    "text": "3077",
+    "value": "VeChain"
+  },
+  {
+    "text": "6535",
+    "value": "NEAR Protocol"
+  },
+  {
+    "text": "4642",
+    "value": "Hedera"
+  },
+  {
+    "text": "2280",
+    "value": "Filecoin"
+  },
+  {
+    "text": "8916",
+    "value": "Internet Computer"
+  },
+  {
+    "text": "1765",
+    "value": "EOS"
+  },
+  {
+    "text": "3330",
+    "value": "Pax Dollar"
+  },
+  {
+    "text": "3602",
+    "value": "Bitcoin SV"
+  },
+  {
+    "text": "6892",
+    "value": "MultiversX (Elrond)"
+  },
+  {
+    "text": "2502",
+    "value": "Huobi Token"
+  },
+  {
+    "text": "4558",
+    "value": "Flow"
+  },
+  {
+    "text": "7278",
+    "value": "Aave"
+  },
+  {
+    "text": "4172",
+    "value": "Terra Classic"
+  },
+  {
+    "text": "2416",
+    "value": "Theta Network"
+  },
+  {
+    "text": "2563",
+    "value": "TrueUSD"
+  },
+  {
+    "text": "2011",
+    "value": "Tezos"
+  },
+  {
+    "text": "19891",
+    "value": "USDD"
+  },
+  {
+    "text": "4066",
+    "value": "Chiliz"
+  },
+  {
+    "text": "6783",
+    "value": "Axie Infinity"
+  },
+  {
+    "text": "6210",
+    "value": "The Sandbox"
+  },
+  {
+    "text": "1437",
+    "value": "Zcash"
+  },
+  {
+    "text": "5964",
+    "value": "Trust Wallet Token"
+  },
+  {
+    "text": "2087",
+    "value": "KuCoin Token"
+  },
+  {
+    "text": "3306",
+    "value": "Gemini Dollar"
+  },
+  {
+    "text": "16086",
+    "value": "BitTorrent-New"
+  },
+  {
+    "text": "11221",
+    "value": "BitDAO"
+  },
+  {
+    "text": "1966",
+    "value": "Decentraland"
+  },
+  {
+    "text": "3513",
+    "value": "Fantom"
+  },
+  {
+    "text": "1518",
+    "value": "Maker"
+  },
+  {
+    "text": "7186",
+    "value": "PancakeSwap"
+  },
+  {
+    "text": "6719",
+    "value": "The Graph"
+  },
+  {
+    "text": "4705",
+    "value": "PAX Gold"
+  },
+  {
+    "text": "21794",
+    "value": "Aptos"
+  },
+  {
+    "text": "4256",
+    "value": "Klaytn"
+  },
+  {
+    "text": "131",
+    "value": "Dash"
+  },
+  {
+    "text": "10791",
+    "value": "eCash"
+  },
+  {
+    "text": "1720",
+    "value": "IOTA"
+  },
+  {
+    "text": "1376",
+    "value": "Neo"
+  },
+  {
+    "text": "4157",
+    "value": "THORChain"
+  },
+  {
+    "text": "8642",
+    "value": "Fei USD"
+  },
+  {
+    "text": "18679",
+    "value": "Chain"
+  },
+  {
+    "text": "11857",
+    "value": "GMX"
+  },
+  {
+    "text": "2586",
+    "value": "Synthetix"
+  },
+  {
+    "text": "4269",
+    "value": "GateToken"
+  },
+  {
+    "text": "8646",
+    "value": "Mina"
+  },
+  {
+    "text": "2694",
+    "value": "Nexo"
+  },
+  {
+    "text": "5068",
+    "value": "Neutrino USD"
+  },
+  {
+    "text": "12220",
+    "value": "Osmosis"
+  },
+  {
+    "text": "2634",
+    "value": "XDC Network"
+  },
+  {
+    "text": "10603",
+    "value": "ImmutableX"
+  },
+  {
+    "text": "21296",
+    "value": "EthereumPoW"
+  },
+  {
+    "text": "4847",
+    "value": "Stacks"
+  },
+  {
+    "text": "8104",
+    "value": "1inch Network"
+  },
+  {
+    "text": "1168",
+    "value": "Decred"
+  },
+  {
+    "text": "8000",
+    "value": "Lido DAO"
+  },
+  {
+    "text": "5665",
+    "value": "Helium"
+  },
+  {
+    "text": "2469",
+    "value": "Zilliqa"
+  },
+  {
+    "text": "1697",
+    "value": "Basic Attention Token"
+  },
+  {
+    "text": "5899",
+    "value": "Casper"
+  },
+  {
+    "text": "1934",
+    "value": "Loopring"
+  },
+  {
+    "text": "6538",
+    "value": "Curve DAO Token"
+  },
+  {
+    "text": "873",
+    "value": "NEM"
+  },
+  {
+    "text": "2130",
+    "value": "Enjin Coin"
+  },
+  {
+    "text": "2682",
+    "value": "Holo"
+  },
+  {
+    "text": "5728",
+    "value": "Balancer"
+  },
+  {
+    "text": "9903",
+    "value": "Convex Finance"
+  },
+  {
+    "text": "4846",
+    "value": "Kava"
+  },
+  {
+    "text": "2577",
+    "value": "Ravencoin"
+  }
+]

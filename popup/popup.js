@@ -1,24 +1,20 @@
-let moneyList =
-    [
-        {
-            "text": "Bitcoin",
-            "value": "1",
-            "selected": true
-        },
-        {
-            "text": "Ethereum",
-            "value": "1027"
-
-        },
-        {
-            "text": "Dogecoin",
-            "value": "74"
-        },
-        {
-            "text": "Binance",
-            "value": "1839"
-        }
-    ];
+let moneyList = "";
+chrome.runtime.getPackageDirectoryEntry(function(root) {
+    root.getFile("popup/money-list.json", {}, function(fileEntry) {
+        fileEntry.file(function(file) {
+            var reader = new FileReader();
+            reader.readAsText(file);
+            reader.onload=function(){
+                moneyList = JSON.parse(reader.result);
+                console.log(moneyList);
+                for (let i = 0, l = moneyList.length; i < l; i++) {
+                    let option = moneyList[i];
+                    selectBox.options.add(new Option(option.value, option.text, option.selected));
+                }
+            }
+        });
+    });
+});
 
 let selectBox = document.getElementById('money');
 let btnChoose = document.getElementById('btn_choose');
@@ -81,10 +77,7 @@ btnChoose.addEventListener('click', function (e) {
 
 
 
-for (let i = 0, l = moneyList.length; i < l; i++) {
-    let option = moneyList[i];
-    selectBox.options.add(new Option(option.text, option.value, option.selected));
-}
+
 
 function updateTableHTML(myArray) {
     let tableBody = document.getElementById("your-table-body-id");
